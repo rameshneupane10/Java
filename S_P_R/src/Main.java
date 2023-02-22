@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println("\n\n\nSCISSOR ✂, PAPER 📄 AND ROCK 🤘 GAME");
 
-        for(i=1;i<=3;i++)
+        for(i=1;i<=5;i++)
         {
             //  take user input as S P R
             Scanner inputObj = new Scanner(System.in);
