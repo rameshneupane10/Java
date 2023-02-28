@@ -8,22 +8,25 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int guessCount = 0;
-        int maxGuesses = 5;
+        int guessed = random.nextInt(10) + 1;
+
 
         // taking input
-        System.out.println("\t\tGUESS THE NUMBER\n\n");
-        System.out.println("You have " + maxGuesses + " guesses remaining.\n\n");
-        while (guessCount < maxGuesses) {
+        System.out.println("\t\tGUESS THE NUMBER\n");
+        System.out.println("You have 5 guesses remaining.\n");
+        while (guessCount < 5)
+        {
             System.out.print("Enter your guess between 1 to 10: ");
             int num = scanner.nextInt();
-            while (num > 10 || num < 1) {
-                System.out.println("Enter number between 1 to 10.");
+            if(num > 10 && num < 1)
+            {
+                System.out.println("Number must be  between 1 to 10.");
                 num = scanner.nextInt();
             }
+
             guessCount++;
 
-            // computer selected num
-            int guessed = random.nextInt(10) + 1; 
+// computer selected num
             if (num < guessed) {
                 System.out.println(num + " is too low, please guess a higher number.");
             } else if (num > guessed) {
@@ -36,7 +39,7 @@ public class Main {
 
         // message part
         System.out.println("You have no remaining guesses left.");
-        int guessed = random.nextInt(10) + 1;
+        guessed = random.nextInt(10) + 1;
         System.out.println("The number was " + guessed + ". Better luck next time.");
     }
 }
