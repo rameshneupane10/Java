@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class AnotherShape {
+public interface AnotherShape
+{
+    public void getColor();
 }
