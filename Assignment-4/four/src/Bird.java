@@ -4,8 +4,5 @@ public class Bird extends Animal
     {
         System.out.println("I am Flying");
     }
-    public void walk()
-    {
-        System.out.println("I am Walking");
-    }
+
 }

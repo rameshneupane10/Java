@@ -15,7 +15,7 @@ public class Main {
         int cash = scanner.nextInt();
 
         //conversion
-        int dollar = cash * 13503/100;  // (135.03 and 13503/100 are the same thing )
+        double dollar = cash * 135.03;
         System.out.println("CONVERSION : ");
         System.out.println(cash + " RS."+" = "+dollar+" $");
     }

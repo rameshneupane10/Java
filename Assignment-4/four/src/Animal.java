@@ -4,5 +4,10 @@ public class Animal
     {
         System.out.println("I am Eating");
     }
+    public void walk()
+
+    {
+        System.out.println("I am Walking");
+    }
 
 }
