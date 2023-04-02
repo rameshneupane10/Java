@@ -41,11 +41,16 @@ public class Main {
             {
                 System.out.print((char)value);
             }
+            fileReader.close();
         }
         catch (Exception e)
         {
             System.out.println(e);
         }
+
+
+        //deletes the file
+//        file.delete();
 
     }
 }
