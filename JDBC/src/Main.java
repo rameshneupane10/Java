@@ -8,7 +8,7 @@ public class Main {
         String databaseUrl = "jdbc:mysql://localhost/mydatabase";
 
         // connection database
-        Connection conn = DriverManager.getConnection(databaseUrl);
+        Connection conn = DriverManager.getConnection(databaseUrl,"root","");
         System.out.println("database connecton succedded");
 
         Statement stm = conn.createStatement();
