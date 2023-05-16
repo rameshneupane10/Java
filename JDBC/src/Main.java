@@ -5,18 +5,19 @@ public class Main {
     {
         Class.forName("com.mysql.cj.jdbc.Driver");
 
-        String databaseUrl = "jdbc:mysql://localhost/mydatabase";
+        String databaseUrl = "jdbc:mysql://localhost/ramesh";
 
         // connection database
-        Connection conn = DriverManager.getConnection(databaseUrl,"root","");
+        Connection conn = DriverManager.getConnection(databaseUrl,"root","root");
         System.out.println("database connecton succedded");
 
         Statement stm = conn.createStatement();
-        ResultSet rs = stm.executeQuery("select * from student");
+        ResultSet rs = stm.executeQuery("select * from students");
         while (rs.next())
         {
-            System.out.println(rs.getString("name"));
-            System.out.println(rs.getString("id"));
+            String name = rs.getString("name");
+            System.out.println(name);
+            System.out.println(rs.getString("idstudents "));
 
         }
     }
