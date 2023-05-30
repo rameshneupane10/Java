@@ -9,6 +9,6 @@ public class HelloServant extends UnicastRemoteObject implements HelloService
 
     @Override
     public String printMessage() throws RemoteException {
-        return "Hey this is a message";
+        return "Hey ! this is a message";
     }
 }
