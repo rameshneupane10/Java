@@ -6,7 +6,6 @@ import java.io.FileWriter;
 public class Main {
     public static void main(String[] args)
     {
-
         //creating new file
         File file =new File("newfile.txt");
         try
@@ -18,24 +17,17 @@ public class Main {
             e.printStackTrace();
             System.out.println("File Created Successfully");
         }
-
-
-
         //writing on the file
         try
         {
             FileWriter fileWriter = new FileWriter("newfile.txt");
-            fileWriter.write("This is 1 new file\n");
-            fileWriter.write("This is 2 new file\n");
-            fileWriter.write("This is 3 new file");
+            fileWriter.write("writing something on file\n");
             fileWriter.close();
         }
         catch (Exception e)
         {
             System.out.println(e);
         }
-
-
         //reading from the file using buffer reader
         try
         {
@@ -56,8 +48,5 @@ public class Main {
         {
             System.out.println(e);
         }
-
-
-
     }
 }
