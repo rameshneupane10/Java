@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Closeable;
 
 public class Main implements ActionListener {
     static JTextField textField1 = new JTextField();
@@ -11,7 +12,7 @@ public class Main implements ActionListener {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Multiplication");
 
-        frame.setBounds(100, 100, 250, 150);
+        frame.setBounds(500, 500, 250, 250);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
