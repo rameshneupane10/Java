@@ -28,7 +28,7 @@ public class Main implements ActionListener {
 
         JButton button = new JButton("Mul");
         button.setBounds(90, 80, 50, 50);
-        button.addActionListener(new Main());
+        button.addActionListener(new Main() );
         frame.add(button);
 
         frame.setVisible(true);
