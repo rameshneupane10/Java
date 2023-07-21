@@ -43,14 +43,15 @@ public class Main  {
         {
             int num1 = Integer.parseInt(tf1.getText());
             int num2 = Integer.parseInt(tf2.getText());
-           int product =num1 * num2;
+           int product =num1 + num2;
            tf3.setText(String.valueOf(product));
         }
       });
 
       button2.addActionListener(new ActionListener() {
         @Override
-        public void actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent e)
+        {
           System.exit(0);
         }
       });

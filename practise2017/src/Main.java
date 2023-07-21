@@ -7,9 +7,7 @@ public class Main {
     {
         // for creating a frame
         JFrame frame = new JFrame("java");
-        frame.setLayout(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500,500);
+
 
         // for creation of label
         JLabel label1 = new JLabel("N1");
@@ -59,11 +57,14 @@ public class Main {
         exitbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
+
             {
                 System.exit(0);
             }
         });
-
+        frame.setLayout(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500,500);
         frame.setVisible(true);
     }
 }
